@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="662px" height="654px" viewBox="0 0 362 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-545.000000, -75.000000)">
+            <g id="Group" transform="translate(545.000000, 75.000000)">
+                <ellipse id="Oval" fill="#FFC4C4" cx="181" cy="177" rx="181" ry="177"></ellipse>
+                <path d="M192.415,161.219 L177.888,118.235 L138.486,118.235 L123.163,161.219 L138.088,161.219 L138.088,165 L107.641,165 L107.641,161.219 L116.994,161.219 L167.739,24.506 L184.057,24.506 L234.205,161.219 L243.359,161.219 L243.359,165 L178.286,165 L178.286,161.219 L192.415,161.219 Z M158.983,61.719 L140.277,113.857 L176.296,113.857 L158.983,61.719 Z M192.9125,292.981 L227.5385,193.481 L212.0165,193.481 L212.0165,189.7 L242.4635,189.7 L242.4635,193.481 L233.1105,193.481 L185.1515,330.99 L168.4355,330.99 L117.6905,193.481 L108.5365,193.481 L108.5365,189.7 L173.6095,189.7 L173.6095,193.481 L159.4805,193.481 L192.9125,292.981 Z" id="AV" fill="#090180" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
