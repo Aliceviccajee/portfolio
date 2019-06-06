@@ -18,11 +18,10 @@
 <!-- Mobile Menu -->
 <div class="sidebar">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Contact</a></li>
+    <li class="folders">FOLDERS</li>
+    <li><a href="#"><span>x</span> home.html</a></li>
+    <li><a href="#"><span>&nbsp &nbsp &nbsp/ *</span> _work.scss</a></li>
+    <li><a href="#"><span>&nbsp &nbsp &nbsp/ *</span> _contact.scss</a></li>
   </ul>
   <div class="content">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
