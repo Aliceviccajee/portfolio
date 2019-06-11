@@ -3,6 +3,7 @@
 .work {
   .container {
     .content {
+      padding-bottom: 150px;
       h1 {
         font-family: "space mono";
         color: $marine;
@@ -29,7 +30,7 @@
           align-items: center;
           font-family: "space mono";
         }
-        @media (max-width: $breakpoint-mobile) {
+        @media (max-width: $breakpoint-tablet) {
           .cell:nth-child(even) {
             img {
               order: 2;
