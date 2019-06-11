@@ -16,10 +16,15 @@
       .grid {
         display: grid;
         grid-gap: 100px;
+        a {
+          text-decoration: none;
+        }
         h2 {
           color: $peach;
-          padding-bottom: 20px;
           font-family: "space mono";
+          &:hover {
+            color: $marine;
+          }
           @media (min-width: $breakpoint-tablet) {
             font-size: 40px;
           }
