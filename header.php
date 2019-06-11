@@ -19,9 +19,9 @@
 <div class="sidebar">
   <ul>
     <li class="folders">FOLDERS</li>
-    <li><a href="#"><span>x</span> home.html</a></li>
-    <li><a href="#"><span>&nbsp &nbsp &nbsp/ *</span> _work.scss</a></li>
-    <li><a href="#"><span>&nbsp &nbsp &nbsp/ *</span> _contact.scss</a></li>
+    <li><a href="<?php echo get_site_url(); ?>"><span>x</span> home.html</a></li>
+    <li><a href="<?php echo get_site_url(); ?>/work"><span>&nbsp &nbsp &nbsp/ *</span> _work.scss</a></li>
+    <li><a href="<?php echo get_site_url(); ?>/contact"><span>&nbsp &nbsp &nbsp/ *</span> _contact.scss</a></li>
   </ul>
   <div class="content">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -4,9 +4,6 @@ while ( have_posts() ) : the_post(); ?>
 
 <section class="home">
   <div class="container">
-<!--     <div class="logo-area">
-      <img class="logo" src="<?php bloginfo('template_directory'); ?>/img/av-logo.svg"/>
-    </div> -->
     <div class="content">
     <h1>alice viccajee</h1>
       <div class="typewriter"><h2>< <span>web developer</span> ></h2></div>

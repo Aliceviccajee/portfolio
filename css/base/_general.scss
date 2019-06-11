@@ -152,20 +152,87 @@ section {
   }
 }
 
-.breadcrumbs {
-  padding: 20px 0px;
-  width: 100%;
-  z-index: 10;
-  text-transform: uppercase;
-  font: $normal 1.2rem/1.4rem $bold;
-  font-size: 1.2rem;
-  a {
-    color: $white;
-    text-decoration: none;
-    border-bottom: none;
-    &:hover {
-      color: $white;
-      border-bottom: none;
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translate3d(42px, -62px, -135px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float-two {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translate3d(-45px, 50px, 10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float-three {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translate3d(0, 50px, 0);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+section.four-oh-four {
+  overflow: hidden;
+  background: url('../img/space.png') center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  height: 100vh;
+  .content {
+    color: white;
+    font-size: 70px;
+    font-family: "space mono";
+    text-align: center;
+    padding-top: 30%;
+    p, h1 {
+      z-index: 9;
+      position: absolute;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-family: "space mono";
+    }
+  }
+  .cats {
+    .cat-one {
+      z-index: 0;
+      position: absolute;
+      animation: float-two 7s ease-in-out infinite;
+      padding-top: 700px;
+    }
+    .cat-two {
+      z-index: 0;
+
+      position: absolute;
+      animation: float 9s ease-in-out infinite;
+      padding-top: 800px;
+      overflow: hidden;
+      padding-left: 700px;
+    }
+    .cat-three {
+      z-index: 0;
+      
+      position: absolute;
+      padding-left: 750px; 
+      animation: float-three 6s ease-in-out infinite;
     }
   }
 }
