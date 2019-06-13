@@ -50,7 +50,6 @@ require 'plugin-update-checker/plugin-update-checker.php';
     __FILE__
 );
 
-$myUpdateChecker->setAuthentication('678b682754ab56a93b51ec4f7110f914fd9a9058');
 $myUpdateChecker->setBranch('master');
 
 // Options Page

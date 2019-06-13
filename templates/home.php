@@ -10,8 +10,8 @@ while ( have_posts() ) : the_post(); ?>
       <p>&#60;<span>p</span> <span class="green">class</span>=<span class="yellow">"about"</span>&#62;
         Hello I'm Alice, I am a Front end web developer. &#60;<span>/p</span>&#62; </p>
       <ul>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="<?php echo get_site_url(); ?>/work">Work</a></li>
+        <li><a href="<?php echo get_site_url(); ?>/contact">Contact</a></li>
       </ul>
     </div>
   </div>
