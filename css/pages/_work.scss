@@ -37,7 +37,7 @@
         }
         @media (max-width: $breakpoint-tablet) {
           .cell:nth-child(even) {
-            img {
+            a {
               order: 2;
             }
           }

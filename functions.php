@@ -46,7 +46,7 @@ add_action( 'wp_footer', 'my_deregister_scripts' );
 // Update Checker
 require 'plugin-update-checker/plugin-update-checker.php';
 	$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/Futurekings/wordpress',
+    'https://github.com/Aliceviccajee/portfolio',
     __FILE__
 );
 

@@ -12,6 +12,7 @@ get_header(); ?>
           <div class="cell-text">
             <a href="https://sapphire-gaming.netlify.com/" target="_blank"><h2>Sapphire Gaming</h2></a>
      				<p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
      			</div>
    				<a href="https://sapphire-gaming.netlify.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sapphire.jpg"/></a>
         </div>
@@ -21,6 +22,8 @@ get_header(); ?>
           <div class="cell-text">
             <a href="https://artlogic.netlify.com/" target="_blank"><h2>Artlogic</h2></a>
             <p>Artlogic is a beautiful online platform that brings artists, curators and galaries together. This site was given to them as a part of their brand guidelines. All of their designs follow these rules.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
+
           </div>
         </div>
 
@@ -28,6 +31,8 @@ get_header(); ?>
           <div class="cell-text">
             <a href="https://lunche.netlify.com/" target="_blank"><h2>Lunche</h2></a>
             <p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
+
           </div>
           <a href="https://lunche.netlify.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lunche.jpg"/></a>
         </div>
@@ -37,6 +42,8 @@ get_header(); ?>
           <div class="cell-text">
             <a href="https://ice-bloc.netlify.com/" target="_blank"><h2>Ice Bloc</h2></a>
             <p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
+
           </div>
         </div>
 
@@ -44,6 +51,8 @@ get_header(); ?>
           <div class="cell-text">
             <a href="https://www.pacha-mama.co.uk/" target="_blank"><h2>Pachamama</h2></a>
             <p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
+
           </div>
           <a href="https://www.pacha-mama.co.uk/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/pachamama.jpg"/></a>
         </div>
@@ -53,6 +62,8 @@ get_header(); ?>
           <div class="cell-text">
             <a href="https://tabledash.netlify.com/"><h2>Tabledash</h2></a>
             <p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
+
           </div>
         </div>
         </div>
