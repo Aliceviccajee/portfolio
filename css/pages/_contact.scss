@@ -1,7 +1,15 @@
 // Contact
 
-input, textarea  {
-  padding: 5px 10px;
-  font: $normal 1.8rem/2.8rem $regular;
-  border: 3px solid $black;
+.text {
+	display: grid;
+	justify-items: center;
+	padding-top: 50%;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: $purple;
+		&:hover {
+			color: $marine;
+		}
+	}
 }
