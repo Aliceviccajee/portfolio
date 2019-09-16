@@ -66,6 +66,24 @@ get_header(); ?>
 
           </div>
         </div>
+
+        <div class="cell">
+          <a href="https://tabledash.netlify.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tabledash.jpg" target="_blank"/></a>
+          <div class="cell-text">
+            <a href="https://tabledash.netlify.com/"><h2>Tabledash</h2></a>
+            <p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
+          </div>
+        </div>
+
+        <div class="cell">
+          <a href="https://tabledash.netlify.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tabledash.jpg" target="_blank"/></a>
+          <div class="cell-text">
+            <a href="https://tabledash.netlify.com/"><h2>Tabledash</h2></a>
+            <p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
+            <p>HTML SASS CSS JavaScript Netlify</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
