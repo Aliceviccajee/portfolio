@@ -7,7 +7,8 @@ get_header(); ?>
     <div class="content">
     <h1>Examples of my work</h1>
    		<div class="grid">
-
+       <h1>hello</h1>
+<!-- 
    			<div class="cell">
           <div class="cell-text">
             <a href="https://sapphire-gaming.netlify.com/" target="_blank"><h2>Sapphire Gaming</h2></a>
@@ -83,7 +84,7 @@ get_header(); ?>
             <p>Sapphire Gaming is an online gaming platform. This static site was designed to grab the attention of investors. The concept behind the design was to create movement and flow. I added some parallax behaviours to eminate a gaming experience.</p>
             <p>HTML SASS CSS JavaScript Netlify</p>
           </div>
-        </div>
+        </div> -->
         </div>
       </div>
     </div>
