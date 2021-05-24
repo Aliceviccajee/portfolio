@@ -2,18 +2,50 @@
 get_header();
 while ( have_posts() ) : the_post(); ?>
 
+
+<?php 
+$title = get_field('title');
+$intro = get_field('intro');
+?>
+
 <section class="home">
   <div class="container">
     <div class="content">
-    <h1>alice viccajee</h1>
-      <div class="typewriter"><h2>< <span>web developer</span> ></h2></div>
-      <p>&#60;<span>p</span> <span class="green">class</span>=<span class="yellow">"about"</span>&#62;
-        Hello I'm Alice, I am a Front end web developer. &#60;<span>/p</span>&#62; </p>
-      <ul>
-        <li><a href="<?php echo get_site_url(); ?>/work">Work</a></li>
-        <li><a href="<?php echo get_site_url(); ?>/contact">Contact</a></li>
-      </ul>
-    </div>
+      <div class="title">
+        <div class="logo"><h1><?php echo $title; ?></h1></div>
+        <?php echo $intro; ?>
+      </div>
+        <div class="grid">
+        <?php 
+            if( have_rows('portfolio') ):
+            while( have_rows('portfolio') ) : the_row();
+            $title = get_sub_field('title');
+            $copy = get_sub_field('discription');
+            $img = get_sub_field('image');
+            $cta = get_sub_field('link');
+            if( $cta ):
+              $cta_url = $cta['url'];
+              ?>
+
+            <?php endif; ?>
+
+            <div class="list-item">
+              <a target="blank" href="<?php echo esc_url( $cta_url ); ?>"><?php 
+              if( $img ) {
+                echo wp_get_attachment_image( $img['id'], $size );
+              }
+              ?></a>
+              <div class="middle">
+                <a target="blank" href="<?php echo esc_url( $cta_url ); ?>"><div class="visit">Visit</div></a>
+              </div>
+              <div class="title"><a target="blank" href="<?php echo esc_url( $cta_url ); ?>"><?php echo $title; ?></a></div>       
+              <div class="copy"><?php echo $copy; ?></div>  
+            </div>
+            <?php
+            endwhile;
+          endif;
+          ?>
+      </div>
   </div>
 </section>
 

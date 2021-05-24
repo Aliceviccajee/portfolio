@@ -1,6 +1,22 @@
 // Avenir
-$regular: Helvetica, Arial, sans-serif;
-$bold: Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: 'oswald-bold';
+  font-style: normal;
+  src: url('../css/fonts/Oswald-Bold.ttf');
+}
+@font-face {
+  font-family: 'oswald-light';
+  font-style: normal;
+  src: url('../css/fonts/Oswald-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'oswald-regular';
+  font-style: normal;
+  src: url('../css/fonts/Oswald-Regular.ttf');
+}
+
+$body-font: "oswald-regular";
+$body-bold: 'oswald-bold';
 
 // Weights
 $normal: normal;
@@ -11,16 +27,22 @@ $peach: #FFC4C4;
 $marine: #00DBF2;
 $yellow: #E9DC61;
 $pink: #FF0071;
-$purple: #B67AFF;
+$purple: #8377D1;
+$dark-purple: #4E2A84;
 $green: #91E600;
+$pale-pink: #EEE4E1;
+$light-pink: #F5D7E3;
+$med-pink: #F4A5AE;
+$sage: #A4C3B2;
+$dark-pink: #A8577E;
 
 $black: #000;
 $white: #fff;
 
 // Breakpoints
-$breakpoint-mobile: 400px;
+$breakpoint-mobile: 500px;
 $breakpoint-tablet: 768px;
-$breakpoint-laptop: 900px;
+$breakpoint-laptop: 1000px;
 $breakpoint-desktop: 1200px;
 
 // Padding
@@ -61,24 +83,23 @@ html, body {
   min-height: 100%;
 }
 
-body { 
+body {
+  background: $pale-pink;
   font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.8;
-  font-family: $regular;
-  color: $white;
+  font-family: $body-font;
   -webkit-font-smoothing: antialiased; // Fix fonts looking rubbish in Chrome
-  background: #282922;
 }
 
 // Page 
 section {
   &.page, &.post {
     padding: $padding 0px;
-    font: $normal 2rem/3.6rem $regular;
+    font: $normal 2rem/3.6rem $body-font;
     font-size: 2rem;
     line-height: 3.6rem;
     @media (min-width: $breakpoint-tablet) {
-      font: $normal 2.6rem/4rem $regular;
+      font: $normal 2.6rem/4rem $body-font;
       font-size: 2.6rem;
       line-height: 4rem;
     }
@@ -94,58 +115,56 @@ section {
     }
   }
   h1, h2, h3, h4, h5 {
-    color: $white;
-    font-family: $bold;
+    font-family: $body-font;
   }
   h1 {
-    font: $normal 3.6rem/5rem $regular;
+    font: $normal 3.6rem/5rem $body-font;
     margin-bottom: 20px;
     font-size: 3.6rem;
   }
   h2 {
-    font: $normal 3.6rem/5rem $regular;
+    font: $normal 3.6rem/5rem $body-font;
     margin-bottom: 10px;
     font-size: 3.6rem;
     line-height: 5rem;
     
   }
   h3 {
-    font: $normal 2rem/2.6rem $bold;
+    font: $normal 2rem/2.6rem $body-font;
     margin-bottom: 10px;
     font-size: 2rem;
   }
   h4 {
-    font: $normal 1.8rem/2.4rem $regular;
+    font: $normal 1.8rem/2.4rem $body-font;
     margin-bottom: 10px;
     font-size: 1.8rem;
   }
   h5 {
-    font: $normal 1.6rem/2rem $regular;
+    font: $normal 1.6rem/2rem $body-font;
     margin-bottom: 10px;
     font-size: 1.6rem;
   }
   p {
     &.lead {
-      font: $normal 1.8rem/2.8rem $regular;
+      font: $normal 1.8rem/2.8rem $body-font;
     }
     &.center {
       text-align: center;
     }
   }
   b, strong {
-    font-weight: bold;
+    font-weight: font;
   }
   em, i {
     font-style: italic;
   }
   blockquote {
     border-left: 10px solid $white;
-    color: $white;
     padding: $padding-quarter;
     @media (min-width: $breakpoint-tablet) {
       padding: $padding-quarter 0 $padding-quarter $padding;
     }
-    font: $normal 2.8rem/4.6rem $regular;
+    font: $normal 2.8rem/4.6rem $body-font;
     p {
       display: inline;
     }
@@ -197,7 +216,6 @@ section.four-oh-four {
   .content {
     color: white;
     font-size: 70px;
-    font-family: "space mono";
     text-align: center;
     padding-top: 30%;
     p, h1 {
@@ -206,9 +224,6 @@ section.four-oh-four {
     }
     a {
       color: white;
-    }
-    h1 {
-      font-family: "space mono";
     }
   }
   .cats {

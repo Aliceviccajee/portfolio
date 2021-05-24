@@ -1,135 +1,100 @@
 // Home
-section.home {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    img {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-    }
+
+.home {
+  color: $dark-pink;
+  background: $pale-pink;
+  .container {
     .content {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        animation-name: fadeIn;
-        animation-duration: 1.5s;
-        animation-delay: 1s;
-        animation-timing-function: linear;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
+      padding: 5em 0;
+      .title {
+        margin-bottom: 2em;
+        font-family: $body-bold;
+        font-size: 25px;
+      }
+      .logo {
+        background: $sage;
+        margin-bottom: 2em;
+        border-radius: 50px;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         h1 {
-          color: $marine;
-          letter-spacing: 3px;
-          font-size: 70px;
-          font-family: "space mono";
-          padding-bottom: 30px;
+          color: $white;
+          font-size: 50px;
+          margin: 0;
         }
-        h2 {
-          display: block;
-          font-family: "space mono";
-        }
-        .typewriter {
-          max-width: 510px;
-          display: inline-block;
-          color: #E9DC61;
-          font-size: 30px;
-          font-family: "space mono";
-          overflow: hidden; /* Ensures the content is not revealed until the animation */
-          border-right: .15em solid $white; /* The typwriter cursor */
-          white-space: nowrap; /* Keeps the content on a single line */
-          margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-          letter-spacing: .15em; /* Adjust as needed */
-          animation: typing 4s steps(30, end),
-          blink-caret .9s step-end infinite;
-          animation-delay: 1s;
-          margin-bottom: 20px;
-        }
-        p {
-          font-family: "space mono";
-        }
-    }
-    span {
-      color: #FF0071;
-      &.green {
-          color: $green;
       }
-      &.yellow {
-          color: $yellow;
-      }
-    }
-    ul {
-      li {
-        display: inline-block;
-        padding-left: 20px;
-        a {
-          cursor: pointer;
-          text-transform: uppercase;
-          font-size: 13px;
-          padding-bottom: 4px;
-          letter-spacing: 2px;
-          color: $yellow;
-          text-decoration: none;
-          &:hover {
-            color: #CABE55;
-            border-bottom: .5px solid #CABE55;
+      .grid {
+        display: flex;
+        gap: 2%;
+        flex-wrap: wrap;
+        .list-item {
+          position: relative;
+          margin-bottom: 3em;
+          flex: 100%;
+          @media (min-width: $breakpoint-mobile) {
+            flex: 48%;
+            max-width: 48%;
+          }
+          @media (min-width: $breakpoint-laptop) {
+            flex: 24%;
+            max-width: 23%;
+          }
+          img {
+            height: 350px;
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          }
+          .title {
+            font-size: 22px;
+            font-family: $body-bold;
+            margin: 10px 0;
+            a {
+              text-decoration: none;
+              color: $dark-pink;
+              &:hover {
+                color: $sage;
+              }
             }
           }
+          .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            border-radius: 50px;
+            a {
+              text-decoration: none;
+            }
+          }
+          
+        }
+        .list-item:hover .image {
+          opacity: 0.3;
+        }
+        
+        .list-item:hover .middle {
+          opacity: 1;
+        }
+        
+        .visit {
+          background-color: $sage;
+          color: white;
+          font-size: 16px;
+          border-radius: 150px;
+          padding: 16px 32px;
         }
       }
     }
-@keyframes rollIn {
-  0% {
-    transform: translateX(0px) rotate(0deg); 
   }
-  100% {
-    transform: translateX(-250%) rotate(-260deg); 
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1
-  }
-}
-@keyframes typing {
-  from { 
-    width: 0
-  }
-  to { 
-    width: 100%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { 
-    border-color: transparent
-  }
-  50% { 
-    border-color: $white;
-  }
-}
-@keyframes colour {
-  from {
-    background: $blue;
-  }
-  to {
-    background: #282922
-  }
-}
-
-.logo {
-    animation-name: rollIn;
-    animation-duration: 2.5s;
-    animation-delay: 2s;
-    animation-timing-function: linear;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
 }

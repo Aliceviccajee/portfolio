@@ -7,7 +7,26 @@ get_header(); ?>
     <div class="content">
     <h1>Examples of my work</h1>
    		<div class="grid">
-       <h1>hello</h1>
+       <?php 
+          if( have_rows('portfolio') ):
+          while( have_rows('portfolio') ) : the_row();
+          $title = get_sub_field('title');
+          $copy = get_sub_field('discription');
+          $img = get_sub_field('image');
+          ?>
+          <div class="list-item">
+            <div class="title"><?php echo $title; ?></div>          
+            <div class="copy"><?php echo $copy; ?></div>  
+            <?php 
+            if( $img ) {
+              echo wp_get_attachment_image( $img['id'], $size );
+            }
+            ?>
+          </div>
+          <?php
+          endwhile;
+        endif;
+        ?>
 <!-- 
    			<div class="cell">
           <div class="cell-text">

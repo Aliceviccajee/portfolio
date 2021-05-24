@@ -1,5 +1,5 @@
 // Hero
-section.hero{
+section.hero {
   position: relative;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -7,21 +7,21 @@ section.hero{
   padding: 200px 0px $padding;
   .content {
     h1 {
-      font: $normal 5.6rem/7rem $regular;
+      font: $normal 5.6rem/7rem $body-font;
       font-size: 5.6rem;
       line-height: 7rem;
       color: $white;
       @media (max-width: $breakpoint-tablet) {
-        font: $normal 4.2rem/5.2rem $regular;
+        font: $normal 4.2rem/5.2rem $body-font;
       }
     }
     p {
-      font: $normal 2rem/3rem $regular;
+      font: $normal 2rem/3rem $body-font;
       font-size: 2rem;
       line-height: 3rem;
       color: $white;
       @media (max-width: $breakpoint-tablet) {
-        font: $normal 1.8rem/3rem $regular;
+        font: $normal 1.8rem/3rem $body-font;
       }
     }
   }
@@ -48,21 +48,21 @@ section.component--cta {
   .content {
     h2 {
       color: $white;
-      font: $normal 4.6rem/6rem $regular;
+      font: $normal 4.6rem/6rem $body-font;
       font-size: 4.6rem;
       line-height: 6rem;
       margin-bottom: 10px;
       @media (max-width: $breakpoint-tablet) {
-        font: $normal 3.2rem/4.2rem $regular;
+        font: $normal 3.2rem/4.2rem $body-font;
       }
     }
     p {
-      font: $normal 2.6rem/4rem $regular;
+      font: $normal 2.6rem/4rem $body-font;
       font-size: 2.6rem;
       line-height: 4rem;
       color: $white;
       @media (max-width: $breakpoint-tablet) {
-        font: $normal 1.8rem/3rem $regular;
+        font: $normal 1.8rem/3rem $body-font;
       }
     }
   }
@@ -71,12 +71,12 @@ section.component--cta {
 // Text Block 
 section.component--text-block {
   .content {
-    font: $normal 2.6rem/4rem $regular;
+    font: $normal 2.6rem/4rem $body-font;
     font-size: 2.6rem;
     line-height: 4rem;
     h2 {
       color: $white;
-      font: $normal 3.4rem/4.6rem $regular;
+      font: $normal 3.4rem/4.6rem $body-font;
       font-size: 3.4rem;
       line-height: 4.6rem;
     }
@@ -100,10 +100,10 @@ section.component--promotions {
     @media (max-width: $breakpoint-tablet) {
       padding: 20px 0px;
     }
-    font: $normal 1.8rem/2.8rem $regular;
+    font: $normal 1.8rem/2.8rem $body-font;
     h3 {
       color: $white;
-      font: $normal 2.4rem/3.4rem $regular;
+      font: $normal 2.4rem/3.4rem $body-font;
     }
     .image {
       margin-bottom: 20px;
