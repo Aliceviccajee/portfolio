@@ -9,7 +9,7 @@ $intro = get_field('intro');
 ?>
 
 <section class="home">
-  <div class="container">
+  <div class="container section__constrained">
     <div class="content">
       <div class="title">
         <div class="logo"><h1><?php echo $title; ?></h1></div>
