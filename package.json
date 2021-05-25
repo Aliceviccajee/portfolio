@@ -13,6 +13,7 @@
   "license": "ISC",
   "homepage": "https://github.com/Futurekings/wordpress-theme#readme",
   "dependencies": {
+    "composer": "^4.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "^3.9.4",
