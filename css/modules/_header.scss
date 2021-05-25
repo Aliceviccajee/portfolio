@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left:-250px;
-  background-color: #181915;
+  background-color: $sage;
   width: 250px;
   height: 100%;
   transition: .3s;
@@ -40,7 +40,7 @@
   height:60px;
   box-sizing:border-box;
   cursor: pointer;
-  background-color: #282922;
+  background-color: $sage;
   border: none;
   outline: none;
     span{
