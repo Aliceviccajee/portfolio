@@ -64,11 +64,6 @@ $padding-quarter: 20px;
   text-shadow: none !important;
 }
 
-img {
-  max-width: 100%;
-  height: auto; 
-}
-
 p {
   margin-bottom: 20px;
   &:last-child {
@@ -76,9 +71,6 @@ p {
   }
 }
 
-html { // 1.5rem = 15px
-  font-size: 62.5%;
-}
 
 html, body {
   min-height: 100%;
@@ -86,35 +78,13 @@ html, body {
 
 body {
   background: $pale-pink;
-  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 16px; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.8;
   font-family: $body-font;
   -webkit-font-smoothing: antialiased; // Fix fonts looking rubbish in Chrome
 }
 
 // Page 
-section {
-  &.page, &.post {
-    padding: $padding 0px;
-    font: $normal 2rem/3.6rem $body-font;
-    font-size: 2rem;
-    line-height: 3.6rem;
-    @media (min-width: $breakpoint-tablet) {
-      font: $normal 2.6rem/4rem $body-font;
-      font-size: 2.6rem;
-      line-height: 4rem;
-    }
-    article.profile {
-      margin-bottom: $padding;
-      img {
-        margin-top: $padding-quarter;
-      }
-      &:nth-child(3n+4) {
-        margin-left: 0;
-        clear: left;
-      }
-    }
-  }
   h1, h2, h3, h4, h5 {
     font-family: $body-font;
   }
@@ -170,43 +140,7 @@ section {
       display: inline;
     }
   }
-}
 
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translate3d(42px, -62px, -135px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes float-two {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translate3d(-45px, 50px, 10px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes float-three {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translate3d(0, 50px, 0);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
 
 section.four-oh-four {
   overflow: hidden;
