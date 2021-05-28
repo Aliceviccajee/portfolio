@@ -9,11 +9,14 @@
       .title {
         margin-bottom: 2em;
         font-size: 20px;
+        @media (max-width: $breakpoint-laptop) {
+          font-size: 45px;
+        }
         .about {
           border-bottom: 1px solid white;
           padding-bottom: 1em;
           h2 {
-            font-size: 30px;
+            font-size: 45px;
             font-family: $body-bold;
             @media (min-width: $breakpoint-laptop) {
               font-size: 30px;
@@ -100,12 +103,20 @@
             font-size: 22px;
             font-family: $body-bold;
             margin: 10px 0;
+            @media (max-width: $breakpoint-laptop) {
+              font-size: 55px;
+            }
             a {
               text-decoration: none;
               color: $dark-pink;
               &:hover {
                 color: $sage;
               }
+            }
+          }
+          .copy {
+            @media (max-width: $breakpoint-laptop) {
+              font-size: 45px;
             }
           }
           .middle {
