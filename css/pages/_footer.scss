@@ -5,8 +5,8 @@ footer {
       justify-content: center;
       flex-direction: column;
       font-size: 20px;
-      @media (max-width: $breakpoint-desktop) {
-        font-size: 50px;
+      @media (max-width: $breakpoint-laptop) {
+        font-size: 40px;
       }
     }
   }
