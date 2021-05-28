@@ -48,7 +48,7 @@
           position: relative;
           margin-bottom: 3em;
           flex: 100%;
-          @media (min-width: $breakpoint-mobile) {
+          @media (min-width: $breakpoint-tablet) {
             flex: 48%;
             max-width: 48%;
           }

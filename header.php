@@ -3,6 +3,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 <title><?php bloginfo('name'); ?><?php wp_title( '|', true, 'left' ); ?></title>
+<link rel="icon" sizes="192x192"
+  href="<?php echo get_template_directory_uri(); ?>/img/favicon.png"/>
 <?php wp_head(); ?>
 <body <?php body_class($color); ?>>
 <header class="fixed_header">
